@@ -5,6 +5,7 @@
 */
 
 var RUNG_MAX = 48;
+var STEP_ITERATION_LENGTH = 75;
 
 function set_rung(rung_number) {
     Cookies.set('rung', rung_number);
@@ -67,14 +68,19 @@ function show_data(rung_data) {
     var showSteps = $('#steps-data');
     
     if (typeof rung_data != 'undefined') {
-        // TODO: Something a little prettier
         showData.text('Rung Loaded.');
         showRung.text(rung_data.rung);
         showBend.text(rung_data.bend);
         showSitup.text(rung_data.situp);
         showLeglift.text(rung_data.leglift);
         showPushup.text(rung_data.pushup);
-        showSteps.text(rung_data.steps);
+        var step_iterations = Math.floor(rung_data.steps / STEP_ITERATION_LENGTH);
+        var step_remainder = rung_data.steps % STEP_ITERATION_LENGTH;
+        var step_text = step_iterations + "×" + STEP_ITERATION_LENGTH;
+        if (0 != step_remainder) {
+            step_text = step_text + "+" + step_remainder
+        }
+        showSteps.text(step_text);
     } else {
         console.log("Error loading data.");
     };
@@ -90,42 +96,6 @@ function show_data(rung_data) {
 
 $(document).ready(function () {
     get_current_rung_data();
-
-    $('#get-data').click(function () {
-        var showData = $('#show-data');
-
-        get_current_rung_data();  // asynchronous
-            
-        showData.empty();
-
-        showData.text('Loading the JSON file.');
-    });
-   
-    $('#set-cookie').click(function () {
-        var showCookie = $('#show-cookie');
-        var rung = 1;  // Need some logic here to set which one!
-        //console.log(rung);
-
-        showCookie.empty();
-        
-        showCookie.text('Saving the cookie.');
-        set_rung(rung);
-    });
-   
-    $('#get-cookie').click(function () {
-        var showCookie = $('#show-cookie');
-        showCookie.empty();
-        
-        var loaded_rung = current_rung();
-        //console.log(loaded_rung);
-
-        if (loaded_rung) {
-            showCookie.text('Loading the cookie.');
-            var content = '<li>Rung: ' + loaded_rung + '</li>';
-            var list = $('<ul />').html(content);
-            showCookie.append(list);
-        }
-    });
    
     $('#delete-cookie').click(function () {
         var showCookie = $('#show-cookie');

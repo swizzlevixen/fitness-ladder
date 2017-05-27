@@ -1,0 +1,50 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 300%;
+}
+
+#rung {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: #eee;
+    padding-bottom: 0.2em;
+    font-weight: 300;
+}
+
+#reps {
+}
+
+.rep {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.rep:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.rep-title {
+    font-weight: 300;
+}
+
+.rep-number {
+    font-weight: 700;
+}
+
+footer {
+    color: #eee;
+    padding: 0.1em 0.5em;
+    background: #888;
+}
+
+footer p {
+    font-size: 30%;
+}
+
+footer a {
+    color: #dde;
+}
