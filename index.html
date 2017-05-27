@@ -10,14 +10,13 @@
         <script src="load_fitness.js"></script>
         
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
         <script src="https://use.fontawesome.com/3ec65d36c4.js"></script>
         
         <!-- Style -->
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        
         <header id="rung">
             <div id="rung-left"><a href="#" id="decrement-rung"><i class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
             <div id="rung-center">Rung <span id="rung-data"></span></div>
@@ -25,16 +24,31 @@
         </header>
         
         <section id="reps">
-            <div id="bend">bend: <span id="bend-data"></span></div>
-            <div id="situp">situp: <span id="situp-data"></span></div>
-            <div id="leglift">leglift: <span id="leglift-data"></span></div>
-            <div id="pushup">pushup: <span id="pushup-data"></span></div>
-            <div id="steps">steps: <span id="steps-data"></span></div>
+            <div id="bend" class="rep">
+                <div class="rep-title">Bends</div>
+                <div class="rep-number" id="bend-data"></div>
+            </div>
+            <div id="situp" class="rep">
+                <div class="rep-title">Sit-ups</div>
+                <div class="rep-number" id="situp-data"></div>
+            </div>
+            <div id="leglift" class="rep">
+                <div class="rep-title">Leg Lifts</div>
+                <div class="rep-number" id="leglift-data"></div>
+            </div>
+            <div id="pushup" class="rep">
+                <div class="rep-title">Push-ups</div>
+                <div class="rep-number" id="pushup-data"></div>
+            </div>
+            <div id="steps" class="rep">
+                <div class="rep-title">Run & Jump</div>
+                <div class="rep-number" id="steps-data"></div>
+            </div>
         </section>
         
         <footer>
             <p>This site uses cookies to bookmark which rung of the ladder you're on. No other personal data is recorded. If you don’t agree to this use of cookies, <a href="#" id="delete-cookie">click here to delete the cookie</a> and then close this browser window.</p>
-            <p>This web tool developed by <a href="https://github.com/bobtiki/fitness-ladder">Mark Boszko</a>, based upon the Fitness Ladder exercise plan in <a href="http://www.fourmilab.ch/hackdiet/"><i>The Hacker Diet</i></a> Fourth Edition (2005) by <a href="http://www.fourmilab.ch/">John Walker</a>.
+            <p>This web tool developed by <a href="https://github.com/bobtiki/fitness-ladder">Mark Boszko</a>, based upon the Fitness Ladder exercise plan in <a href="http://www.fourmilab.ch/hackdiet/"><i>The Hacker Diet</i></a> Fourth Edition (2005) by <a href="http://www.fourmilab.ch/">John Walker</a>.</p>
         </footer>
     </body>
 </html>
