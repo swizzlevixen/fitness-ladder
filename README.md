@@ -10,6 +10,12 @@ If you need help with learning what the exercises are, check out the Fitness Lad
 
 ## Credits
 
-Based on the [Fitness Ladder exercise program](http://www.fourmilab.ch/hackdiet/e4/exercise.html) in [*The Hacker’s Diet*](http://www.fourmilab.ch/hackdiet/) Fourth Edition (2005) book by [John Walker](http://www.fourmilab.ch/).
+Based on the [Fitness Ladder exercise program](http://www.fourmilab.ch/hackdiet/e4/exercise.html) in [*The Hacker’s Diet*](http://www.fourmilab.ch/hackdiet/) Fourth Edition  book by [John Walker](http://www.fourmilab.ch/).
+
+[js-cookie](https://github.com/js-cookie/js-cookie) © 2014 Klaus Hartl. Used under MIT license.
 
 Apple Touch Icon glyph courtesy [Icononstr](https://iconmonstr.com/accessibility-2/?png).
+
+## License
+
+Freely available for use under the permissive MIT license. See [LICENSE.txt]() for details.
