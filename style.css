@@ -12,3 +12,11 @@ footer a {
     color: #dde;
 }
 
+#rung {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: #eee;
+    padding-bottom: 0.2em;
+{
