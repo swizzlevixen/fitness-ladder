@@ -8,6 +8,16 @@ If you need help with learning what the exercises are, check out the Fitness Lad
 
 ![Running on an iPhone 6 Plus](./fitness-ladder-iphone.png?raw=true)
 
+## Installation
+
+Just grab the files and put 'em up on a web server somewhere. It should just work in any browser that supports JavaScript and cookies.
+
+## Usage
+
+Tap the up or down chevron at the top to go to a higher or lower rung. The app will save a cookie on your browser that will remember where you were the next time you load the page, and load the correct rung.
+
+If you want to remove the cookie from your system, there is a "click here to delete the cookie" link in the fine print at the bottom of the page. Otherwise, the cookie will stick around for up to five years.
+
 ## Credits
 
 Based on the [Fitness Ladder exercise program](http://www.fourmilab.ch/hackdiet/e4/exercise.html) in [*The Hacker’s Diet*](http://www.fourmilab.ch/hackdiet/) Fourth Edition  book by [John Walker](http://www.fourmilab.ch/).
