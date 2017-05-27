@@ -1,0 +1,26 @@
+{
+  "rungs": [
+    {
+      "rung": 1,
+      "bend": 2,
+      "situp": 3,
+      "leglift": 4,
+      "pushup": 2,
+      "steps": 105
+    },{
+      "rung": 2,
+      "bend": 3,
+      "situp": 4,
+      "leglift": 5,
+      "pushup": 3,
+      "steps": 140
+    },{
+      "rung": 3,
+      "bend": 4,
+      "situp": 6,
+      "leglift": 6,
+      "pushup": 3,
+      "steps": 170
+    }
+  ]
+}
