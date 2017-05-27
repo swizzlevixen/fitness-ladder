@@ -6,6 +6,8 @@ This is a very simple JavaScript web app to keep track of which rung of the Fitn
 
 If you need help with learning what the exercises are, check out the Fitness Ladder link above.
 
+![Running on an iPhone 6 Plus](./fitness-ladder-iphone.png?raw=true)
+
 ## Credits
 
 Based on the [Fitness Ladder exercise program](http://www.fourmilab.ch/hackdiet/e4/exercise.html) in [*The Hacker’s Diet*](http://www.fourmilab.ch/hackdiet/) Fourth Edition (2005) book by [John Walker](http://www.fourmilab.ch/).
