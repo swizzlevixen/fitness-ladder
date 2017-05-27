@@ -1,4 +1,14 @@
 body {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
+    font-size: 300%;
 }
+
+footer {
+    font-size: 30%;
+    color: #eee;
+}
+
+footer a {
+    color: #dde;
+}
+
