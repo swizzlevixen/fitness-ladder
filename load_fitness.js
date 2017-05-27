@@ -76,8 +76,11 @@ function show_data(rung_data) {
         showPushup.text(rung_data.pushup);
         var step_iterations = Math.floor(rung_data.steps / STEP_ITERATION_LENGTH);
         var step_remainder = rung_data.steps % STEP_ITERATION_LENGTH;
-        var step_text = step_iterations + "×" + STEP_ITERATION_LENGTH + "+" + step_remainder;
-        showSteps.append(step_text);
+        var step_text = step_iterations + "×" + STEP_ITERATION_LENGTH;
+        if (0 != step_remainder) {
+            step_text = step_text + "+" + step_remainder
+        }
+        showSteps.text(step_text);
     } else {
         console.log("Error loading data.");
     };
