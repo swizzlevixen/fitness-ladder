@@ -20,7 +20,7 @@ If you want to remove the cookie from your system, there is a "click here to del
 
 ## Credits
 
-Based on the [Fitness Ladder exercise program](http://www.fourmilab.ch/hackdiet/e4/exercise.html) in [*The Hacker’s Diet*](http://www.fourmilab.ch/hackdiet/) Fourth Edition  book by [John Walker](http://www.fourmilab.ch/).
+Based on the [Fitness Ladder exercise program](http://www.fourmilab.ch/hackdiet/e4/exercise.html) in [*The Hacker’s Diet*](http://www.fourmilab.ch/hackdiet/) Fourth Edition (2005) book by [John Walker](http://www.fourmilab.ch/). © 1991-2005 John Walker.
 
 [js-cookie](https://github.com/js-cookie/js-cookie) © 2014 Klaus Hartl. Used under MIT license.
 
