@@ -90,42 +90,6 @@ function show_data(rung_data) {
 
 $(document).ready(function () {
     get_current_rung_data();
-
-    $('#get-data').click(function () {
-        var showData = $('#show-data');
-
-        get_current_rung_data();  // asynchronous
-            
-        showData.empty();
-
-        showData.text('Loading the JSON file.');
-    });
-   
-    $('#set-cookie').click(function () {
-        var showCookie = $('#show-cookie');
-        var rung = 1;  // Need some logic here to set which one!
-        //console.log(rung);
-
-        showCookie.empty();
-        
-        showCookie.text('Saving the cookie.');
-        set_rung(rung);
-    });
-   
-    $('#get-cookie').click(function () {
-        var showCookie = $('#show-cookie');
-        showCookie.empty();
-        
-        var loaded_rung = current_rung();
-        //console.log(loaded_rung);
-
-        if (loaded_rung) {
-            showCookie.text('Loading the cookie.');
-            var content = '<li>Rung: ' + loaded_rung + '</li>';
-            var list = $('<ul />').html(content);
-            showCookie.append(list);
-        }
-    });
    
     $('#delete-cookie').click(function () {
         var showCookie = $('#show-cookie');
