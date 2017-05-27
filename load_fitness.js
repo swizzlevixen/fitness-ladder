@@ -5,6 +5,7 @@
 */
 
 var RUNG_MAX = 48;
+var STEP_ITERATION_LENGTH = 75;
 
 function set_rung(rung_number) {
     Cookies.set('rung', rung_number);
@@ -67,14 +68,16 @@ function show_data(rung_data) {
     var showSteps = $('#steps-data');
     
     if (typeof rung_data != 'undefined') {
-        // TODO: Something a little prettier
         showData.text('Rung Loaded.');
         showRung.text(rung_data.rung);
         showBend.text(rung_data.bend);
         showSitup.text(rung_data.situp);
         showLeglift.text(rung_data.leglift);
         showPushup.text(rung_data.pushup);
-        showSteps.text(rung_data.steps);
+        var step_iterations = Math.floor(rung_data.steps / STEP_ITERATION_LENGTH);
+        var step_remainder = rung_data.steps % STEP_ITERATION_LENGTH;
+        var step_text = step_iterations + "×" + STEP_ITERATION_LENGTH + "+" + step_remainder;
+        showSteps.append(step_text);
     } else {
         console.log("Error loading data.");
     };
