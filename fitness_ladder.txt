@@ -1,3 +1,6 @@
+Data from:
+http://www.fourmilab.ch/hackdiet/e4/exercise.html
+
 Rung	Bend	Sit up	Leg lift	Push up	Steps	Count
 1       2	    3	    4	        2	    105	    1	30
 2	    3	    4	    5	        3	    140	    1	65
@@ -14,3 +17,5 @@ Rung	Bend	Sit up	Leg lift	Push up	Steps	Count
 13	    23	    21	    25	        15	    405	    5	30
 14	    25	    23	    27	        16	    425	    5	50
 15	    28	    25	    30	        18	    440	    5	65
+
+FIXME: Need to add the rest of the rungs.
