@@ -4,7 +4,7 @@
 *
 */
 
-var RUNG_MAX = 3;
+var RUNG_MAX = 48;
 
 function set_rung(rung_number) {
     Cookies.set('rung', rung_number);
@@ -67,7 +67,6 @@ function show_data(rung_data) {
     var showSteps = $('#steps-data');
     
     if (typeof rung_data != 'undefined') {
-        // TODO: All of the data
         // TODO: Something a little prettier
         showData.text('Rung Loaded.');
         showRung.text(rung_data.rung);
