@@ -35,6 +35,11 @@ body {
     font-weight: 700;
 }
 
+a#ladder-data {
+    font-size: 80%;
+    text-decoration: none;
+}
+
 footer {
     color: #eee;
     padding: 0.1em 0.5em;
