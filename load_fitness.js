@@ -40,6 +40,7 @@ function current_rung() {
     }
     catch(err) {
         console.log(err.message);
+        alert(err.message);
     }
     return rung_number;
 };
@@ -64,6 +65,7 @@ function get_rung_data(rung_number) {
     }
     catch(err) {
         console.log(err.message);
+        alert(err.message);
     }
 };
 
@@ -97,6 +99,7 @@ function show_data(rung_data) {
         showSteps.text(step_text);
     } else {
         console.log("Error loading data.");
+        alert("Error loading data.");
     };
 }
 
