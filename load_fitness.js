@@ -27,6 +27,7 @@ function set_rung(rung_number) {
 };
 
 function current_rung() {
+    //alert("current_rung()");  // function debug
     var rung_number;
     
     // Check to make sure the cookie is set. If not, reset it to '1'.
@@ -46,6 +47,7 @@ function current_rung() {
 };
 
 function get_rung_data(rung_number) {
+    //alert("get_rung_data(" + rung_number + ")");  // function debug
     try {
         // $.getJSON() is asynchronous
         $.getJSON('fitness_ladder.json', function (data) {
@@ -70,10 +72,12 @@ function get_rung_data(rung_number) {
 };
 
 function get_current_rung_data() {
+    //alert("get_current_rung_data()");  // function debug
     get_rung_data(current_rung());
 };
 
 function show_data(rung_data) {
+    //alert("show_data(" + rung_data + ")");  // function debug
     // Asynchronous callback when the JSON parsing is done.
     var showData = $('#show-data');
     var showRung = $('#rung-data');
@@ -112,6 +116,7 @@ function show_data(rung_data) {
 */
 
 $(document).ready(function () {
+    //alert("$(document).ready");  // function debug
     get_current_rung_data();
    
     $('#delete-cookie').click(function () {
