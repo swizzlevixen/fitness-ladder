@@ -18,6 +18,22 @@ Tap the up or down chevron at the top to go to a higher or lower rung. The app w
 
 If you want to remove the cookie from your system, there is a "click here to delete the cookie" link in the fine print at the bottom of the page. Otherwise, the cookie will stick around for up to five years.
 
+## Release notes
+
+### v1.1
+
+2018-04-03
+
+- Corrected (hopefully) the longevity of the cookie to a year.
+- Added the exercise type (Introductory, Lifetime) to the bottom of the reps list.
+- Rung type links to the different exercise types, as described on The Hacker’s Diet page, [What, Me Exercise?](http://www.fourmilab.ch/hackdiet/e4/exercise.html)
+
+### v1.0
+
+2017-05-26
+
+- Initial release.
+
 ## Credits
 
 Based on the [Fitness Ladder exercise program](http://www.fourmilab.ch/hackdiet/e4/exercise.html) in [*The Hacker’s Diet*](http://www.fourmilab.ch/hackdiet/) Fourth Edition (2005) book by [John Walker](http://www.fourmilab.ch/). © 1991-2005 John Walker. Exercise rep data used by permission.
