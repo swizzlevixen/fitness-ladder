@@ -8,10 +8,22 @@ var RUNG_MAX = 48;
 var STEP_ITERATION_LENGTH = 75;
 
 function set_rung(rung_number) {
-    // Calculate five years out
-    cookie_life = 5 * 365 * 24 * 60 * 60;
-    Cookies.set('rung', rung_number, { expires: cookie_life });
-    return rung_number;
+    //alert("set_rung(" + rung_number + ")");  // function debug
+    try {
+        Cookies.set('rung', rung_number, { expires: 365 });
+    }
+    catch(err) {
+        console.log(err.message);
+        alert(err.message);
+    }
+    try {
+        return rung_number;
+    }
+    catch(err) {
+        console.log(err.message);
+        alert(err.message);
+    }
+    
 };
 
 function current_rung() {
