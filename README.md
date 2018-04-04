@@ -40,7 +40,7 @@ Based on the [Fitness Ladder exercise program](http://www.fourmilab.ch/hackdiet/
 
 [js-cookie](https://github.com/js-cookie/js-cookie) © 2014 Klaus Hartl. Used under MIT license.
 
-Apple Touch Icon glyph courtesy [Icononstr](https://iconmonstr.com/accessibility-2/?png).
+Apple Touch Icon glyph courtesy [Iconmonstr](https://iconmonstr.com/accessibility-2/?png).
 
 ## License
 
