@@ -86,6 +86,7 @@ function show_data(rung_data) {
     var showLeglift = $('#leglift-data');
     var showPushup = $('#pushup-data');
     var showSteps = $('#steps-data');
+    var showLadder = $('a#ladder-data');
     
     if (typeof rung_data != 'undefined') {
         showData.text('Rung Loaded.');
@@ -101,6 +102,14 @@ function show_data(rung_data) {
             step_text = step_text + "+" + step_remainder
         }
         showSteps.text(step_text);
+        
+        if ( parseInt(rung_data.rung) <= 15 ) {
+            showLadder.text("Introductory Ladder");
+            showLadder.attr("href", "http://www.fourmilab.ch/hackdiet/e4/exercise.html#IntroductoryLadder");
+        } else {
+            showLadder.text("Lifetime Ladder");
+            showLadder.attr("href", "http://www.fourmilab.ch/hackdiet/e4/exercise.html#LifetimeLadder");
+        }
     } else {
         console.log("Error loading data.");
         alert("Error loading data.");
